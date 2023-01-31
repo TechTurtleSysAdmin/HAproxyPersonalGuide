@@ -21,3 +21,7 @@
  [CON] [REQ1] ... [RESP1] [REQ2] ... [RESP2] [CLO] ...
  ```
   
+- Abbiamo anche la pipeline mode, che fa una raccolta di tutte le richieste lato client (utile quando devono essere caricate molte immagini che compongono una pagina).
+```
+[CON] [REQ1] [REQ2] ... [RESP1] [RESP2] [CLO] ...
+ ```
