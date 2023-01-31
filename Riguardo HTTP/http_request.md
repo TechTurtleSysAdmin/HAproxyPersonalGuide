@@ -17,4 +17,10 @@ La request line è Numero linea 1 ed è sempre composta da 3 campi:
 | URI | /serv/login.php?lang=en&profile=2 |
 | version tag | HTTP/1.1 |
 
+Lo URI può avere due forme:
+
+| 🔗 | 🔗 |
+| ------------- | ------------- |
+| relative URI | /serv/login.php?lang=en&profile=2 |
+| absolute URI | http://192.168.0.12:8080/serv/login.php?lang=en&profile=2 |
  
