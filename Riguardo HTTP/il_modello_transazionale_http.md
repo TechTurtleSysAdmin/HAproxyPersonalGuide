@@ -10,11 +10,13 @@
  ```
  
  - Questa viene chiamata modalità "HTTP chiusa", perchè: 
-  - Il client invia una richiesta attraverso una connessione.
-  - Il server risponde alla richiesta e chiude la connessione.
+   - Il client invia una richiesta attraverso una connessione.
+   - Il server risponde alla richiesta e chiude la connessione.
 
 
 - A causa della natura transazionale del protocollo, è stato possibile migliorarlo per evitare di chiudere una connessione tra due transazioni successive
+  - Generalmente questo metodo è migliore della modalità "HTTP-close", ma non sempre perchè i client limitano il loro valore di transazioni concorrenti ad un numero piccolo.
 ```
  [CON] [REQ1] ... [RESP1] [REQ2] ... [RESP2] [CLO] ...
  ```
+  
