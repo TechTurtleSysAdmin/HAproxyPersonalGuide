@@ -11,6 +11,10 @@
 ## Request Line
 La request line è la prima linea ed è sempre composta da 3 campi:
 
-
+| :) | :) |
+| ------------- | ------------- |
+| METHOD | GET |
+| URI | /serv/login.php?lang=en&profile=2 |
+| version tag | HTTP/1.1 |
 
  
