@@ -15,6 +15,7 @@
 
 
 - A causa della natura transazionale del protocollo, è stato possibile migliorarlo per evitare di chiudere una connessione tra due transazioni successive
+  - In questa modalità tuttavia, è obbligatorio che il server indichi la lunghezza del contenuto in modo che il client non attenda indefinitamente
   - Generalmente questo metodo è migliore della modalità "HTTP-close", ma non sempre perchè i client limitano il loro valore di transazioni concorrenti ad un numero piccolo.
 ```
  [CON] [REQ1] ... [RESP1] [REQ2] ... [RESP2] [CLO] ...
