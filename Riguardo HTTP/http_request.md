@@ -54,6 +54,7 @@ Il codice dello stato è sempre di tre numeri. il primo numero indica uno stato 
 | 5xx  | error caused by the server |
 
 
+HAProxy potrebbe emettere i seguenti codici di stato da solo:
 
 | Code | When / reason |
 | ------------- | ------------- |
@@ -63,12 +64,12 @@ Il codice dello stato è sempre di tre numeri. il primo numero indica uno stato 
 | 303 | when performing a redirection, depending on the configured code |
 | 307 | when performing a redirection, depending on the configured code |
 | 308 | when performing a redirection, depending on the configured code |
-|   |  |
-|   |  |
-|   |  |
-|   |  |
-|   |  |
-|   |  |
+| 400 | for an invalid or too large request |
+| 401 | when an authentication is required to perform the action (when accessing the stats page) |
+| 403 | when a request is forbidden by a "http-request deny" rule |
+| 404 | when the requested resource could not be found |
+| 408 | when the request timeout strikes before the request is complete |
+| 410 |  |
 |   |  |
 |   |  |
 |   |  |
