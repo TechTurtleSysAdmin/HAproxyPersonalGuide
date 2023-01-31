@@ -22,6 +22,7 @@
  ```
   
 - Abbiamo anche la pipeline mode, dove il client non riceve subito una risposta ad una richiesta fatta, ma viene fatta una raccolta di tutte le richieste lato client (utile quando devono essere caricate molte immagini che compongono una pagina) e poi viene data una risposta cumulativa lato server.
+  - Questo può ovviamente avere un enorme vantaggio sulle prestazioni, in quanto la latenza della rete di rete viene eliminata tra le richieste successive. Molti agent HTTP non supportano non supportano correttamente il pipelining, poiché non esiste un modo per associare una risposta alla risposta alla richiesta corrispondente in HTTP. Per questo motivo, è obbligatorio che il server risponda nello stesso ordine esatto in cui sono state ricevute le richieste. 
 ```
 [CON] [REQ1] [REQ2] ... [RESP1] [RESP2] [CLO] ...
  ```
