@@ -24,3 +24,11 @@ Lo URI può avere due forme:
 | relative URI | /serv/login.php?lang=en&profile=2 |
 | absolute URI | http://192.168.0.12:8080/serv/login.php?lang=en&profile=2 |
  
+
+# HTTP response
+
+| Numero linea | Contenuto |
+| ------------- | ------------- |
+| 1 | HTTP/1.1 200 OK  |
+| 2 | Content-length: 350 |
+| 3 | Content-Type: text/html |
