@@ -9,7 +9,7 @@
 | 5 | Accept: image/png |
 
 ## Request Line
-La request line è la prima linea ed è sempre composta da 3 campi:
+La request line è Numero linea 1 ed è sempre composta da 3 campi:
 
 | :) | :) |
 | ------------- | ------------- |
