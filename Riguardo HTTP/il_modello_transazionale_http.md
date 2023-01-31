@@ -26,3 +26,14 @@
 ```
 [CON] [REQ1] [REQ2] ... [RESP1] [RESP2] [CLO] ...
  ```
+ 
+ HAProxy supporta 4 modalità di connessione:
+ 
+| Nome | Definizione |
+| ------------- | ------------- |
+| keep alive  | Tutte le richieste e le risposte vengono processate (default)  |
+| Tunnel | solo la prima richiesta e la prima risposta vengono elaborate, tutto il resto viene inoltrato senza analisi (deprecato) |
+| Server Close | la connessione rivolta al server viene chiusa dopo la risposta. |
+| Close | la connessione viene chiusa attivamente dopo la fine della risposta. |
+ 
+ 
