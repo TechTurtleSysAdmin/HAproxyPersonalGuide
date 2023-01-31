@@ -69,7 +69,9 @@ HAProxy potrebbe emettere i seguenti codici di stato da solo:
 | 403 | when a request is forbidden by a "http-request deny" rule |
 | 404 | when the requested resource could not be found |
 | 408 | when the request timeout strikes before the request is complete |
-| 410 |  |
-|   |  |
-|   |  |
-|   |  |
+| 410 | when the requested resource is no longer available and will not be available again |
+| 500 | when HAProxy encounters an unrecoverable internal error, such as a memory allocation failure, which should never happen |
+| 501 | when HAProxy is unable to satisfy a client request because of an unsupported feature |
+| 502 | when the server returns an empty, invalid or incomplete response, or when an "http-response deny" rule blocks the response. |
+| 503 | when no server was available to handle the request, or in response to monitoring requests which match the "monitor fail" condition. |
+| 504 | when the response timeout strikes before the server responds. |
